@@ -16,10 +16,17 @@
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Election</a>
       </div>
-        <button class="btn btn-primary navbar-btn">Add Voter</button>
+        <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target=".bs-example-modal-lg">Add Voter</button>
     </div>
   </nav>
 
+  <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <h1>content</h1>
+      </div>
+    </div>
+  </div>
 
 
 <%= yield %>
