@@ -1,0 +1,8 @@
+<div class="container">
+  <% @voters.each do |voter| %>
+  <div>
+      <h3><%= voter.first_name %> <%=voter.last_name%></h3>
+      <p><%=  voter.address %> <%=voter.city%>, <%= voter.state %> <%= voter.zip %></p>
+  </div>
+  <% end %>
+</div>

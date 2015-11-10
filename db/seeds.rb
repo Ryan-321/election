@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Voter.destroy_all
+
+Voter.create(first_name:"John",last_name:"Wall",address:"601 F St NW", city:"Washington", state:"DC", zip:2004)
+Voter.create(first_name:"Bradley",last_name:"Beal",address:"601 F St NW", city:"Washington", state:"DC", zip:2004)
