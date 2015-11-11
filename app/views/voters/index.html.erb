@@ -1,12 +1,30 @@
-<div class="container">
-  <% @voters.each do |voter| %>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h3 class="panel-title"><%= voter.first_name %> <%=voter.last_name%></h3>
+
+
+
+
+<div class="container-fluid">
+  <div class="col-md-3">
+    <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target=".bs-example-modal-lg">Add Voter</button>
+  </div>
+  <div class="col-md-9">
+    <% @voters.each do |voter| %>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= voter.first_name %> <%=voter.last_name%></h3>
+      </div>
+      <div class="panel-body">
+        <p><%=  voter.address %> <%=voter.city%>, <%= voter.state %> <%= voter.zip %></p>
+      </div>
     </div>
-    <div class="panel-body">
-      <p><%=  voter.address %> <%=voter.city%>, <%= voter.state %> <%= voter.zip %></p>
+    <% end %>
+  </div>
+</div>
+
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <h1>content</h1>
     </div>
   </div>
-  <% end %>
 </div>
