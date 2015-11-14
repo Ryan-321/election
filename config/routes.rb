@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-root to: 'voters#index'
 resources :voters do
+  get "delete"
 end
+root to: 'voters#index'
 
 end

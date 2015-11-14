@@ -1,51 +1,16 @@
-
-
-
-
 <div class="container-fluid">
   <div class="col-md-3">
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Voter</button>
+    <%= link_to "Add Voter", new_voter_path, remote: true, class: "btn btn-primary" %>
+    <div class="new-product"></div> <!-- ?????  -->
   </div>
-  <div class="col-md-9">
-    <% @voters.each do |voter| %>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title"><%=voter.first_name %> <%=voter.last_name%></h3>
-      </div>
-      <div class="panel-body">
-        <p><%=voter.address %> <%=voter.city%>, <%=voter.state %> <%=voter.zip %></p>
-        <p>--created <%= time_ago_in_words voter.created_at %> ago <%= link_to "[delete]", voter_path(voter), method: :delete %></p>
-      </div>
-    </div>
-    <% end %>
+
+  <div class="col-md-9 voter-index">
+    <%= render partial: "index" %>
   </div>
 </div>
-
-
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog" aria-labelledby="myLargeModalLabel">
-  <div class="modal-dialog modal-lg">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Add Voter</h4>
-      </div>
-      <div class="modal-body">
-        <%= render partial: "form" %>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<script>
+<div id="voter-modal" class="modal fade"></div>
+<!-- <script>
 $('#modal-form').on('shown.bs.modal', function () {
   $('#myInput').focus()  // ???
 })
-</script>
+</script> -->

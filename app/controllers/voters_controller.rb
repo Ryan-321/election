@@ -2,25 +2,34 @@ class VotersController < ApplicationController
 
   def index
     @voters = Voter.all.order(created_at: :desc)
-    @voter = Voter.new 
   end
   def show
+    @voter = Voter.find(params[:id])
   end
   def new
+    @voter = Voter.new
   end
   def create
-    @voter = Voter.create!(voter_params)
-    redirect_to voters_path
+    @voters = Voter.all.order(created_at: :desc)
+    @voter = Voter.create(voter_params)
   end
   def edit
-
+    @voter = Voter.find(params[:id])
   end
-  def updated
+  def update
+    @voters = Voter.all.order(created_at: :desc)
+
+    @voter = Voter.find(params[:id])
+    @voter.update_attributes(voter_params)
+  end
+  def delete
+    @voter = Voter.find(params[:voter_id])
   end
   def destroy
+    @voters = Voter.all.order(created_at: :desc)
+
     @voter = Voter.find(params[:id])
     @voter.destroy
-    redirect_to voters_path
   end
 
 private # am
