@@ -2,6 +2,7 @@ $("ul.errors").html("")
 <% if @voter.errors.any? %>
   <% @voter.errors.full_messages.each do |message| %>
     $("ul.errors").append($("<li />").html("<%= message.html_safe %>"))
+    console.log(message)
   <% end %>
 <% else %>
   $(".voter-index").html("<%= escape_javascript(render 'index') %>")

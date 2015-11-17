@@ -1,52 +1,16 @@
 body{
-  background: #eee;
+  background: #00aced;
 }
 input{
   display: block;
   width: 100%;
 }
-
-/********  ADD VOTER BUTTON *********/
-
-.button_add_voter{
-  outline: none;
-  margin: 5em auto;
-  display: block;
-  border: none;
-  border-radius: 49%;
-  height: 15em;
-  width: 15em;
-  background: -webkit-linear-gradient(red 35%,transparent 0%, transparent 65%,  blue 0%);
-   box-shadow: 1px 1px 3px 3px;
+.panel-default>.panel-heading{
+  background-color: transparent;
+  color: #fff;
 }
-.button_add_voter span{
-  font-size: 2em;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 800;
-  font: Arial;
-  color: red;
-  text-shadow: 1px 1px black,
-              -1px -1px black,
-              -1px 1px black,
-               1px -1px black;
-}
-.button_add_voter:hover{
-  position:relative;
-  bottom:1px;
-  right:1px;
-  box-shadow: 2px 2px 4px 4px;
-}
-.button_add_voter:active{
-  position:relative;
-  top:2px;
-  left:2px;
-  box-shadow: none;
-  border: 1px inset gray;
-}
-
-/********  FORM BUTTON *********/
-
-.voter_submit{
-  margin: 1em 0;
+.panel{
+  background: #00aced;
+  color: #fff;
+  border: 2px solid #fff;
 }

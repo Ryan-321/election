@@ -1,0 +1,33 @@
+
+.btn-add-voter{
+  background: transparent;
+  border: 3px solid white;
+  color: #fff;
+  display: block;
+  margin: 3em auto;
+  font-size: 2em;
+  letter-spacing: 1px;
+  height: 5em;
+  line-height: 5em;
+  padding: 0;
+  transition: color 1s, background 1s;
+}
+.btn-add-voter:hover{
+  color: #00aced;
+  background: #fff;
+}
+
+@media screen and (max-width: 990px) {
+    .btn-add-voter {
+        margin: 2em auto;
+        display: block;
+        width: 50%;
+        height: 3em;
+        line-height: 3em;
+        font-size: 3em;
+    }
+    @media screen and (max-width: 560px) {
+        .btn-add-voter {
+          width: 80%;
+        }
+}
