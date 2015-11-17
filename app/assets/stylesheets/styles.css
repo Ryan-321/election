@@ -1,6 +1,13 @@
 body{
   background: #00aced;
 }
+nav.navbar.navbar-default{
+  background: #fff;
+}
+div.navbar-header a.navbar-brand{
+  font-size: 2em;
+  color: #00aced;
+}
 input{
   display: block;
   width: 100%;
@@ -13,4 +20,24 @@ input{
   background: #00aced;
   color: #fff;
   border: 2px solid #fff;
+}
+.voter-delete-name{
+  font-weight: 700;
+}
+
+/******   Media Queries    ********/
+
+@media screen and (max-width: 990px) {
+    .btn-add-voter {
+        margin: 2em auto;
+        display: block;
+        width: 50%;
+        height: 3em;
+        line-height: 3em;
+        font-size: 3em;
+    }
+    @media screen and (max-width: 560px) {
+        .btn-add-voter {
+          width: 80%;
+        }
 }

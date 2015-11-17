@@ -1,2 +1,4 @@
 $("#voter-modal").html("<%= escape_javascript(render 'new') %>")
 $("#voter-modal").modal("show")
+
+// B/c remote: true is set on new_voter_path link this code gets activated

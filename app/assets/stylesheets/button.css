@@ -17,17 +17,44 @@
   background: #fff;
 }
 
-@media screen and (max-width: 990px) {
-    .btn-add-voter {
-        margin: 2em auto;
-        display: block;
-        width: 50%;
-        height: 3em;
-        line-height: 3em;
-        font-size: 3em;
-    }
-    @media screen and (max-width: 560px) {
-        .btn-add-voter {
-          width: 80%;
-        }
+.btn-edit-voter, .btn-delete-voter {
+  background: transparent;
+  letter-spacing: .8px;
+  transition: color 1s, background 1s;
+}
+.btn-edit-voter{
+  color: white;
+  border: 2px solid white;
+}
+.btn-edit-voter:hover{
+  color: #00aced;
+  background: #fff;
+  border: 2px solid #fff;
+}
+.btn-delete-voter {
+  border: 2px solid red;
+}
+.btn-delete-voter :hover{
+  background: red;
+}
+
+.btn-yes-delete-modal, .btn-no-delete-modal{
+  color: black;
+  letter-spacing: .8px;
+  background: transparent;
+  transition: color 1s, background 1s;
+}
+.btn-yes-delete-modal{
+  border: 2px solid red;
+}
+.btn-yes-delete-modal:hover{
+  color: #fff;
+}
+.btn-no-delete-modal{
+  border: 2px solid #00aced;
+}
+.btn-no-delete-modal:hover{
+  color: #fff;
+  background: #00aced;
+  border: 2px solid #00aced;
 }

@@ -6,8 +6,10 @@
     <div class="panel-body">
       <p><%=voter.address %> <%=voter.city%>, <%=voter.state %> <%=voter.zip %></p>
       <p>--created <%= time_ago_in_words voter.created_at %> ago</p>
-      <%= link_to "Edit", edit_voter_path(voter), remote: true, class: "btn btn-default" %>
-      <%= link_to "Delete", voter_delete_path(voter), remote: true, class: "btn btn-danger" %>
+      <%= link_to "Edit", edit_voter_path(voter), remote: true, class: "btn btn-default btn-edit-voter" %>
+      <%= link_to "Delete", voter_delete_path(voter), remote: true, class: "btn btn-danger btn-delete-voter" %>
     </div>
   </div>
 <% end %>
+
+<!-- remote: true tells rails we want to use AJAX for link   -->

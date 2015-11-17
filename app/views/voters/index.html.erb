@@ -1,11 +1,10 @@
 <div class="container-fluid">
   <div class="col-md-3">
-    <%= link_to "Add Voter", new_voter_path, remote: true, class: "btn btn-add-voter hvr-rectangle-out" %>
-    <div class="new-product"></div> <!-- ?????  -->
+    <%= link_to "Add Voter", new_voter_path, remote: true, class: "btn btn-add-voter" %>
   </div>
-
+  <!-- remote: true tells rails we want to use AJAX for link   -->
   <div class="col-md-9 voter-index">
-    <%= render partial: "index" %>
+    <%= render partial: "index" %>  <!-- voters list -->
   </div>
 </div>
-<div id="voter-modal" class="modal fade"></div>
+<div id="voter-modal" class="modal fade"></div>  <!--  MODAL -->
