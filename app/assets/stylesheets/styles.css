@@ -36,6 +36,7 @@ input{
         line-height: 3em;
         font-size: 3em;
     }
+}    
     @media screen and (max-width: 560px) {
         .btn-add-voter {
           width: 80%;
