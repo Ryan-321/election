@@ -1,8 +1,9 @@
+/*******   ADD VOTER *******/
 
 .btn-add-voter{
   background: transparent;
   border: 3px solid white;
-  color: #fff;
+  color: #f2f2f2;
   display: block;
   margin: 3em auto;
   font-size: 2em;
@@ -14,9 +15,9 @@
 }
 .btn-add-voter:hover{
   color: #00aced;
-  background: #fff;
+  background: #f2f2f2;
 }
-
+/*******   INDEX VOTER BUTTONS *******/
 .btn-edit-voter, .btn-delete-voter {
   background: transparent;
   letter-spacing: .8px;
@@ -28,8 +29,8 @@
 }
 .btn-edit-voter:hover{
   color: #00aced;
-  background: #fff;
-  border: 2px solid #fff;
+  background: #f2f2f2;
+  border: 2px solid #f2f2f2;
 }
 .btn-delete-voter {
   border: 2px solid red;
@@ -37,7 +38,7 @@
 .btn-delete-voter :hover{
   background: red;
 }
-
+/*******   DELETE MODAL BUTTONS *******/
 .btn-yes-delete-modal, .btn-no-delete-modal{
   color: black;
   letter-spacing: .8px;
@@ -48,13 +49,13 @@
   border: 2px solid red;
 }
 .btn-yes-delete-modal:hover{
-  color: #fff;
+  color: #f2f2f2;
 }
 .btn-no-delete-modal{
   border: 2px solid #00aced;
 }
 .btn-no-delete-modal:hover{
-  color: #fff;
+  color: #f2f2f2;
   background: #00aced;
   border: 2px solid #00aced;
 }
